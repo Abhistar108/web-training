@@ -1,0 +1,49 @@
+.pppp{
+    background-color: aqua;
+    margin: 0px 400px 10px 400px;
+    color: white;
+}
+.last{
+    color: white;
+    background-color: aqua;
+    padding: 10px 20px 10px 20px;
+    border-radius: 20px;
+}
+.required{
+    color: red;
+}
+.group{
+    cursor: pointer;
+}
+.group span:hover,
+.group span:hover ~ span{
+    color: yellow;
+}
+.group:focus,
+.group:focus ~ .group 
+{
+     color: gold;
+}
+body {
+    font-family: Arial, sans-serif;
+}
+.star-rating {
+    direction: rtl; /* Right-to-left to allow the last star to be the first in tab order */
+    display: inline-block;
+}
+
+.star {
+    font-size: 2rem; /* Adjust size of stars here */
+    cursor: pointer;
+    color: #ccc; /* Default star color */
+}
+
+.star:hover,
+.star:hover ~ .star {
+    color: gold; /* Star color on hover */
+}
+
+.star:focus,
+.star:focus ~ .star {
+    color: gold; /* Star color on focus (keyboard navigation) */
+}
